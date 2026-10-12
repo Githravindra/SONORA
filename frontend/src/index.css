@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-sonora-bg text-sonora-text;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-sonora-primary text-black rounded-full font-semibold hover:bg-opacity-90 transition-all;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-sonora-elevated text-sonora-text rounded-full font-semibold hover:bg-sonora-card transition-all;
+  }
+
+  .card {
+    @apply bg-sonora-card rounded-lg p-4 hover:bg-sonora-elevated transition-colors;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
